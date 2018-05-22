@@ -1,0 +1,50 @@
+
+/* Header / Video */
+.jumbotron{
+  position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+.container {
+  position: relative;
+  color: #ffffff;
+  z-index: 2;
+}
+
+#video-background{ 
+  position: absolute;
+  height: auto;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 1;
+}
+
+/* Card Design */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0.2,0.2,0.4);
+  transition: 0.3s;
+  width: 60%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0.4,0.4,0.8);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+/* Frontpage Hyperlinks */
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.linktext{
+  text-align: center;
+}
