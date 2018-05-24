@@ -1,0 +1,44 @@
+#spacexlogo{
+    width: 50%;
+    height: auto;
+  }
+
+.jumbotron h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 35px;
+  }
+
+#backgroundvideo{
+    position: fixed;
+      right: 0;
+      bottom: 0;
+      margin-top: 55px !important;
+      min-width: 100%; 
+      min-height: 90%;
+  }  
+
+#homecontent{
+    margin: 55px 0 75px; 
+    color: white;
+    text-align: center;
+}
+
+#desktoplinks{
+    display: none;
+}
+
+.col-10{
+    margin-bottom: 30px;
+}
+
+#desktopnav{
+    display: none;
+}
+
+#mobilelinks a{
+    color: black;
+}
+
+.footer-bs{
+    margin-top: 25px;
+}
