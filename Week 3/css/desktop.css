@@ -53,3 +53,8 @@
   padding: 25px;
 }
 
+#contactinfo:hover{
+  background-color: white;
+  color: black;
+  text-align: center;
+}
