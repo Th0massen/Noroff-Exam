@@ -19,7 +19,7 @@
   }
 
   #homecontent{
-      margin: 65px 0 95px; 
+      margin: 65px 0 105px; 
       color: white;
       text-align: center;
       font-size: 20px;
@@ -36,3 +36,20 @@
   .footer-bs{
     margin-top: 55px;
   }
+
+.onHover{
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.card:hover .onHover{
+    opacity: 1;
+    visibility: visible;
+}
+
+#header{
+  margin: 40px 0 30px 0;
+  padding: 25px;
+}
+

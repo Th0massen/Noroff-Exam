@@ -13,8 +13,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <!-- Design -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px)" href="css/desktop.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </head>
 <body>
+    <video id="backgroundvideo" preload muted autoplay loop>
+        <source src="resources/newheader.mp4" type="video/mp4">
+        Your Browser does not support the video formats. Please try Google Chrome or Mozilla Firefox.
+    </video>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-fixed-top navbar-dark bg-dark main-nav">
           <!-- Collapse button -->
@@ -22,7 +30,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navigation content -->
-        <div class="container">
+        <div class="container" id="navcontainer">
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
@@ -32,47 +40,78 @@
                         <a class="nav-link" href="#">Livestream</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="subpages/contact.html">Contact</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav mx-auto">
-                    <li class="navlogo"><a class="nav-link" href="#">SpaceFeed</a></li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Rates</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Help</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
+                    <li class="navlogo"></li>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- Header -->
     <div class="jumbotron">
-        <video id="video-background" preload muted autoplay loop>
-            <source src="resources/jumboheader.mp4" type="video/mp4">
-            Your Browser does not support the video formats. Please try Google Chrome or Mozilla Firefox.
-        </video>
+        <h1 class="logo" id="mainlogo">SpaceFeed</h1><br>
+        <p>In collaboration with <img id="spacexlogo" src="resources/SpaceXlogo.svg" alt="spacex logo"></p>
     </div>
     <!-- Content -->
     <div class="col-sm-12">
         <div id="homecontent">
-            <p>Created in collaboration with SpaceX</p>
-            <p>SpaceX Designs, Manufatures and Launches advanced rockets and spacecrafts</p>
+            <p>SpaceX Designs, Manufactures and Launches advanced rockets and spacecrafts</p>
             <p>We make it easier to stay up-to-date on their progress and events</p>
         </div>
     </div>
     </div>
     <!-- Hyperlinks --><br>
-    <div class="container">
+    <div id="desktoplinks" class="container">
         <div class="row">
         <!-- Launch schedule-->
-            <div class="col-sm-4">
+            <div class="col-4">
+                <div class="card">
+                        <a href="#">
+                            <div class="linktext">
+                                <p>Launch Schedule</p>
+                            </div>
+                            <div class="linkimg">
+                                <img src="resources/launchimg.jpg" alt="Launch shcedule" class="responsive">     
+                            </div>
+                        </a>
+                </div>
+            </div>
+            <!-- Livefeed -->
+            <div class="col-4">
+                <div class="card">
+                    <a href="#">
+                        <div class="linktext">
+                            <p>Live Feed</p>
+                        </div>
+                        <div class="linkimg">   
+                            <img src="resources/sattelite.jpg" alt="Live Feed" class="responsive">   
+                        </div>
+                    </a>
+                </div>
+            </div>
+             <!-- Livestreams -->
+             <div class="col-4">
+                <div class="card">
+                    <a href="#">
+                        <div class="linktext">
+                            <p>Live Stream</p>
+                        </div>
+                        <div class="linkimg">   
+                            <img src="resources/astronaut.jpg" alt="Live Stream" class="responsive">   
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mobilelinks" class="container">
+        <div class="row">
+        <!-- Launch schedule-->
+            <div class="col-2">
+            </div>
+            <div class="col-10">
                 <div class="card">
                     <a href="#">
                         <div class="linktext">
@@ -85,35 +124,83 @@
                 </div>
             </div>
             <!-- Livefeed -->
-            <div class="col-sm-4">
+            <div class="col-2">
+                <br>
+            </div>
+            <div class="col-10">
                 <div class="card">
                     <a href="#">
                         <div class="linktext">
-                            <p>Launch Schedule</p>
+                            <p>Live Feed</p>
                         </div>
                         <div class="linkimg">   
-                            <img src="resources/launchimg.jpg" alt="Launch schedule" class="responsive">   
+                            <img src="resources/sattelite.jpg" alt="Live Feed" class="responsive">   
                         </div>
                     </a>
                 </div>
             </div>
+            <div class="col-2">
+            </div>
              <!-- Livestreams -->
-             <div class="col-sm-4">
+            <div class="col-10">
                 <div class="card">
                     <a href="#">
                         <div class="linktext">
-                            <p>Launch Schedule</p>
+                            <p>Live Stream</p>
                         </div>
                         <div class="linkimg">   
-                            <img src="resources/launchimg.jpg" alt="Launch schedule" class="responsive">   
+                            <img src="resources/astronaut.jpg" alt="Live Stream" class="responsive">   
                         </div>
                     </a>
                 </div>
             </div>
         </div>
     </div>
+    <hr>
     <!-- Footer -->
-    <div>
-    </div>
+    <footer class="footer-bs">
+        <div class="row">
+            <div class="col-md-3 footer-brand animated fadeInLeft">
+                <h2 class="logo">SpaceFeed</h2>
+                <p>SpaceX has gained worldwide attention for a series of historic milestones. It is the only private company ever to return a spacecraft from low-Earth orbit, which it first accomplished in December 2010.</p>
+                <p>In 2018 we joined up with SpaceX to make the news, launches and other information available and easily accessible</p>
+                <p>© 2018 SpaceFeed Inc, All rights reserved</p>
+            </div>
+            <div class="col-md-4 footer-nav animated fadeInUp">
+                <h4>Menu —</h4>
+                <div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Launch Schedule</a></li>
+                        <li><a href="#">Live Feed</a></li>
+                        <li><a href="#">Live Stream</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 footer-social animated fadeInDown">
+                <h4>Follow Us —</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                    <li><a href="https://www.twitter.com">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.github.com">GitHub</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-ns animated fadeInRight">
+                <h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                        </span>
+                    </div><!-- /input-group -->
+                </p>
+            </div>
+        </div>
+    </footer>
+    <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="http://enfoplus.net">Prince J. Sargbah</a></p></section>
 </body>
 </html>

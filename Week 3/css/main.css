@@ -6,6 +6,10 @@ body{
   font-family: 'Orbitron', sans-serif;
 }
 
+#mainlogo{
+  color: black;
+}
+
 .navbar{
   background-color: black !important;
   opacity: 0%;
@@ -14,11 +18,11 @@ body{
 .navbar a{
   color: white !important;
   margin: 0 15px 0 15px;
+  font-family: 'Orbitron', sans-serif;
 }
 
 .navbar a:hover{
-  background-color: white;
-  color: black !important;
+  color: gray !important;
 }
 
 /* Header */
@@ -59,9 +63,35 @@ body{
   text-align: center;
 }
 
+#homelink{
+  text-decoration: none;
+  color: black;
+}
+
+/* contact */
+#header{
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+}
+
+#contactinfo{
+  margin: 45px 0 40px 0;
+  padding: 25px;
+  font-size: 20px;
+}
+
+#contactform{
+  text-align: center;
+}
+
+#supportopen{
+  margin-top: 55px;
+}
+
 /* Footer */
 .footer-bs {
-  background-color: #3c3d41;
+background-color: #3c3d41;
 padding: 60px 40px 0;
 color: rgba(255,255,255,1.00);
 border-bottom-right-radius: 6px;
