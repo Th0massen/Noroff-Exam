@@ -1,7 +1,6 @@
 #spacexlogo{
-    width: 10%;
+    width: 15%;
     height: auto;
-    margin-left: 10px;
   }
 
   .jumbotron h1{
@@ -53,8 +52,4 @@
   padding: 25px;
 }
 
-#contactinfo:hover{
-  background-color: white;
-  color: black;
-  text-align: center;
-}
+

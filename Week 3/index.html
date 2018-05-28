@@ -20,7 +20,7 @@
 </head>
 <body>
     <video id="backgroundvideo" preload muted autoplay loop>
-        <source src="resources/newheader.mp4" type="video/mp4">
+        <source src="resources/header.mp4" type="video/mp4">
         Your Browser does not support the video formats. Please try Google Chrome or Mozilla Firefox.
     </video>
     <!-- Navigation -->
@@ -30,14 +30,17 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Navigation content -->
-        <div class="container" id="navcontainer">
+        <div id="navcontainer">
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Schedule</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Livefeed</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Livestream</a>
+                        <a class="nav-link" href="subpages/livestream.html">Livestream</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="subpages/contact.html">Contact</a>
@@ -52,7 +55,7 @@
     <!-- Header -->
     <div class="jumbotron">
         <h1 class="logo" id="mainlogo">SpaceFeed</h1><br>
-        <p>In collaboration with <img id="spacexlogo" src="resources/SpaceXlogo.svg" alt="spacex logo"></p>
+        <p>In collaboration with <img id="spacexlogo" src="resources/spacexlogo.png" alt="spacex logo"></p>
     </div>
     <!-- Content -->
     <div class="col-sm-12">
@@ -94,7 +97,7 @@
              <!-- Livestreams -->
              <div class="col-4">
                 <div class="card">
-                    <a href="#">
+                    <a href="subpages/livestream.html">
                         <div class="linktext">
                             <p>Live Stream</p>
                         </div>
@@ -144,7 +147,7 @@
              <!-- Livestreams -->
             <div class="col-10">
                 <div class="card">
-                    <a href="#">
+                    <a href="subpages/livestream.html">
                         <div class="linktext">
                             <p>Live Stream</p>
                         </div>
@@ -173,8 +176,8 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Launch Schedule</a></li>
                         <li><a href="#">Live Feed</a></li>
-                        <li><a href="#">Live Stream</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="subpages/livestream.html">Live Stream</a></li>
+                        <li><a href="subpages/contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -201,6 +204,5 @@
             </div>
         </div>
     </footer>
-    <section style="text-align:center; margin:10px auto;"><p>Designed by <a href="http://enfoplus.net">Prince J. Sargbah</a></p></section>
 </body>
 </html>

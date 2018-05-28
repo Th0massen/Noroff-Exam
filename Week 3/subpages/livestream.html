@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SpaceFeed</title>
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- Design -->
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 600px)" href="../css/mobile.css">
+    <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px)" href="../css/desktop.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+</head>
+<body>
+    <video id="backgroundvideo" preload muted autoplay loop>
+        <source src="../resources/header.mp4" type="video/mp4">
+        Your Browser does not support the video formats. Please try Google Chrome or Mozilla Firefox.
+    </video>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-fixed-top navbar-dark bg-dark main-nav">
+          <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navigation content -->
+        <div id="navcontainer">
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Livefeed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Livestream</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="navlogo"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <div class="jumbotron">
+        <a id="homelink" href="../index.html"><h1 class="logo">SpaceFeed</h1></a><br>
+        <p>In collaboration with <img id="spacexlogo" src="../resources/spacexlogo.png" alt="spacex logo"></p>
+    </div>
+
+    <!-- Content -->
+    <div class="container">
+        <div class="ISS-live">
+            <p class="liveHeader">Live from the ISS</p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="http://www.ustream.tv/embed/9408562?autoplay=1?html5ui" allowfullscreen></iframe>
+            </div>
+            <p class="liveHeader">News live</p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/y3niFzo5VLI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="liveshow">
+                <img id="thumbnail" src="../resources/livethumbnail.jpg" alt="news live" onclick="document.getElementById('showNews').style.display='block'">
+            </div>
+            <div id="showNews">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="liveNews" width="560" height="315" src="https://www.youtube.com/embed/y3niFzo5VLI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    if(document.getElementById(showNews).style.display == "block"){
+        document.getElementById(liveNews).play();
+    }
+    </script>
+    <!-- Footer -->
+    <footer class="footer-bs">
+            <div class="row">
+                <div class="col-md-3 footer-brand animated fadeInLeft">
+                    <h2 class="logo">SpaceFeed</h2>
+                    <p>SpaceX has gained worldwide attention for a series of historic milestones. It is the only private company ever to return a spacecraft from low-Earth orbit, which it first accomplished in December 2010.</p>
+                    <p>In 2018 we joined up with SpaceX to make the news, launches and other information available and easily accessible</p>
+                    <p>© 2018 SpaceFeed Inc, All rights reserved</p>
+                </div>
+                <div class="col-md-4 footer-nav animated fadeInUp">
+                    <h4>Menu —</h4>
+                    <div class="col-md-6">
+                        <ul class="pages">
+                            <li><a href="../index,html">Home</a></li>
+                            <li><a href="#">Launch Schedule</a></li>
+                            <li><a href="#">Live Feed</a></li>
+                            <li><a href="#">Live Stream</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2 footer-social animated fadeInDown">
+                    <h4>Follow Us —</h4>
+                    <ul>
+                        <li><a href="https://www.facebook.com">Facebook</a></li>
+                        <li><a href="https://www.twitter.com">Twitter</a></li>
+                        <li><a href="https://www.instagram.com/">Instagram</a></li>
+                        <li><a href="https://www.github.com">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-ns animated fadeInRight">
+                    <h4>Newsletter</h4>
+                    <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                    <p>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                            </span>
+                        </div><!-- /input-group -->
+                    </p>
+                </div>
+            </div>
+    </footer>
+</body>
+</html>

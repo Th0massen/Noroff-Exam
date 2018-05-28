@@ -89,6 +89,38 @@ body{
   margin-top: 55px;
 }
 
+#contactbtn{
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+#contactbtn:hover{
+  background-color: grey;
+}
+
+/* Modal */
+.modal-header{
+  text-align: center !important;
+}
+
+#contact-title{
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* livestream */
+.liveHeader{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin: 35px 0 15px 0;
+  padding: 20px 0 10px 0;
+}
+
+#showNews{
+  display: none;
+}
+
 /* Footer */
 .footer-bs {
 background-color: #3c3d41;
