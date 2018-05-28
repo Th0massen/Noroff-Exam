@@ -61,29 +61,16 @@
     <!-- Content -->
     <div class="container">
         <div class="ISS-live">
-            <p class="liveHeader">Live from the ISS</p>
+            <p class="liveHeader">News and Replays</p>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="http://www.ustream.tv/embed/9408562?autoplay=1?html5ui" allowfullscreen></iframe>
-            </div>
-            <p class="liveHeader">News live</p>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/y3niFzo5VLI?autoplay=1" allowfullscreen></iframe>
+            </div><br>
+            <p class="liveHeader">Live cam from the ISS</p>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/y3niFzo5VLI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <div class="liveshow">
-                <img id="thumbnail" src="../resources/livethumbnail.jpg" alt="news live" onclick="document.getElementById('showNews').style.display='block'">
-            </div>
-            <div id="showNews">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe id="liveNews" width="560" height="315" src="https://www.youtube.com/embed/y3niFzo5VLI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9kVSVkRv-dc?autoplay=1&amp;showinfo=0&amp;mute=1" allowfullscreen></iframe>
             </div>
         </div>
     </div>
-    <script>
-    if(document.getElementById(showNews).style.display == "block"){
-        document.getElementById(liveNews).play();
-    }
-    </script>
     <!-- Footer -->
     <footer class="footer-bs">
             <div class="row">
@@ -117,14 +104,12 @@
                 <div class="col-md-3 footer-ns animated fadeInRight">
                     <h4>Newsletter</h4>
                     <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
-                    <p>
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search for...">
                             <span class="input-group-btn">
                                 <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
                             </span>
                         </div><!-- /input-group -->
-                    </p>
                 </div>
             </div>
     </footer>
