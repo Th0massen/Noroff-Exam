@@ -52,4 +52,17 @@
   padding: 25px;
 }
 
+#map {
+  width: 150px;
+  height: auto;
+}
+
+#ISSlocationText{
+  font-size: 35px;
+}
+
+#numberinspace{
+  font-size: 35px;
+}
+
 

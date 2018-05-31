@@ -121,6 +121,40 @@ body{
   display: none;
 }
 
+/* livefeed */
+#ISSlocationText{
+  text-align: center;
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+#issinfo{
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 25px;
+  color: white;
+}
+
+#peopleinspace{
+  margin-top: 25px;
+}
+
+.people{
+  padding: 15px;
+  color: white;
+  text-align: center;
+}
+
+#numberinspace{
+  color: white;
+  text-align: center;
+  margin-top: 55px;
+  font-size: 35px;
+}
+
+#ISSinfo{
+  font-size: 12px;
+}
+
 /* Footer */
 .footer-bs {
 background-color: #3c3d41;

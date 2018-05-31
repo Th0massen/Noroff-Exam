@@ -39,6 +39,14 @@
     color: black;
 }
 
+#ISSlocationText{
+    font-size: 25px;
+}
+
+#numberinspace{
+    font-size: 25px;
+}
+
 .footer-bs{
     margin-top: 25px;
 }

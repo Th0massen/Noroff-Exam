@@ -57,61 +57,21 @@
         <a id="homelink" href="../index.html"><h1 class="logo">SpaceFeed</h1></a><br>
         <p>In collaboration with <img id="spacexlogo" src="../resources/spacexlogo.png" alt="spacex logo"></p>
     </div>
-    <!-- Content -->
-    <div class="container">
-        <div id="header">
-            <br><h2>Contact us</h2><br>
-        </div>
-        <div id="contactinfo">
-            <p>Send us some feedback if you experience any problems</p>
-            <p>Our location: 1600 Amphitheatre Parkway, Mountain View, CA 94043</p>
-            <p>Support phone: 123 45 678</p>
-        </div>
-        <div id="contactform">
-            <p>Or click on the button below to open our support form</p>
-            <button id="contactbtn" type="button" class="btn btn-primary text-center" data-toggle="modal" data-target="#contactModal">Open Contact Form</button><br>
-            <p id="supportopen">Our support desk will contact you on the registered Email</p>
-            <p>Open: 06:00 - 18:00</p>
-        </div>
-    </div>
-    <!-- The Modal -->
-  <div class="modal fade" id="contactModal">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-          
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 id="contact-title" class="modal-title">Contact Us</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-            
-            <!-- Modal body -->
-            <div class="modal-body">
-                <form action="/action_page.php">
-                    <div class="form-group">
-                        <label for="name">Name:</label>
-                        <input type="name" class="form-control" id="name">
-                    </div>
-                    <div class="form-group">
-                      <label for="email">Email address:</label>
-                      <input type="email" class="form-control" id="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="comment">Feedback:</label>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
-                    </div> 
-                </form> 
-            </div>
-            
-            <!-- Modal footer -->
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" onclick="">Submit</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            </div>
-            
-          </div>
-        </div>
-    </div>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    
+    <div id="map" style="width: 800px; height: 400px"> </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    
+
+    
+
+
+
+
     <!-- Footer -->
     <footer class="footer-bs">
             <div class="row">
