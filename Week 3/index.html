@@ -24,7 +24,7 @@
         Your Browser does not support the video formats. Please try Google Chrome or Mozilla Firefox.
     </video>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-fixed-top navbar-dark bg-dark main-nav">
+    <nav class="navbar navbar-expand-md navbar-fixed-top navbar-dark bg-dark main-nav ">
           <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Schedule</a>
+                        <a class="nav-link" href="subpages/schedule.html">Schedule</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="subpages/livefeed.html">Livefeed</a>
@@ -71,12 +71,15 @@
         <!-- Launch schedule-->
             <div class="col-4">
                 <div class="card">
-                        <a href="#">
+                        <a href="subpages/schedule.html">
                             <div class="linktext">
                                 <p>Launch Schedule</p>
                             </div>
                             <div class="linkimg">
-                                <img src="resources/launchimg.jpg" alt="Launch shcedule" class="responsive">     
+                                <img class="image" src="resources/launchimg.jpg" alt="Launch shcedule" class="responsive"> 
+                                <div class="hover">
+                                    <div class="hovertext">View upcoming launches</div>
+                                  </div>    
                             </div>
                         </a>
                 </div>
@@ -89,7 +92,10 @@
                             <p>Live Feed</p>
                         </div>
                         <div class="linkimg">   
-                            <img src="resources/sattelite.jpg" alt="Live Feed" class="responsive">   
+                            <img class="image" src="resources/sattelite.jpg" alt="Live Feed" class="responsive"> 
+                            <div class="hover">
+                                <div class="hovertext">Data from the ISS in realtime</div>
+                            </div>  
                         </div>
                     </a>
                 </div>
@@ -102,7 +108,10 @@
                             <p>Live Stream</p>
                         </div>
                         <div class="linkimg">   
-                            <img src="resources/astronaut.jpg" alt="Live Stream" class="responsive">   
+                            <img class="image" src="resources/astronaut.jpg" alt="Live Stream" class="responsive">
+                            <div class="hover">
+                                <div class="hovertext">Live launches, news and footage</div>
+                            </div>   
                         </div>
                     </a>
                 </div>
@@ -116,7 +125,7 @@
             </div>
             <div class="col-10">
                 <div class="card">
-                    <a href="#">
+                    <a href="subpages/schedule.html">
                         <div class="linktext">
                             <p>Launch Schedule</p>
                         </div>
@@ -174,7 +183,7 @@
                 <div class="col-md-6">
                     <ul class="pages">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Launch Schedule</a></li>
+                        <li><a href="subpages/schedule.html">Launch Schedule</a></li>
                         <li><a href="subpages/livefeed.html">Live Feed</a></li>
                         <li><a href="subpages/livestream.html">Live Stream</a></li>
                         <li><a href="subpages/contact.html">Contact</a></li>
@@ -195,11 +204,8 @@
                 <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
                 <p>
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for...">
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
-                        </span>
-                    </div><!-- /input-group -->
+                            
+                    </div>
                 </p>
             </div>
         </div>

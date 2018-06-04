@@ -3,6 +3,10 @@
     height: auto;
   }
 
+  #livecontrols-desktop{
+      display: none;
+  }
+
 .jumbotron h1{
     font-family: 'Orbitron', sans-serif;
     font-size: 35px;
@@ -49,4 +53,20 @@
 
 .footer-bs{
     margin-top: 25px;
+}
+
+#livecontrols-mobile .col-12{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#livecontrols-mobile input{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#livecontrols-mobile input:hover{
+    background-color: white;
+    color:black;
 }

@@ -2,7 +2,6 @@
 fetch('http://api.open-notify.org/astros?format=json')
     .then(result => result.json())
     .then((res) => {
-        console.log(0);
     listPeople(res);
 })
 

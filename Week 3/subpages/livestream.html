@@ -34,13 +34,13 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Schedule</a>
+                        <a class="nav-link" href="schedule.html">Schedule</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Livefeed</a>
+                        <a class="nav-link" href="livefeed.html">Livefeed</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Livestream</a>
+                        <a class="nav-link" href="livestream.html">Livestream</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -59,16 +59,88 @@
     </div>
 
     <!-- Content -->
+    
     <div class="container">
-        <div class="ISS-live">
-            <p class="liveHeader">News and Replays</p>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/y3niFzo5VLI?autoplay=1" allowfullscreen></iframe>
-            </div><br>
-            <p class="liveHeader">Live cam from the ISS</p>
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9kVSVkRv-dc?autoplay=1&amp;showinfo=0&amp;mute=1" allowfullscreen></iframe>
+        <div class="livestreams">
+            <div id="live-iss">
+                <p class="liveHeader">Live cam from the ISS</p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="liveISSstream" class="embed-responsive-item" src="https://www.youtube.com/embed/DSTH0RBUV6I?showinfo=0&amp;enablejsapi=1" allowfullscreen></iframe>
+                </div>
             </div>
+            <div id="live-news">
+                <p class="liveHeader">News and Replays</p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="liveNewsstream" class="embed-responsive-item" src="https://www.youtube.com/embed/y3niFzo5VLI?showinfo=0&amp;enablejsapi=1" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div id="nasa-tv">
+                <p class="liveHeader">Nasa TV</p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="liveNASAstream" class="embed-responsive-item" src="https://www.youtube.com/embed/wwMDvPCGeE0?showinfo=0&amp;enablejsapi=1" allowfullscreen></iframe>
+                </div><br>
+            </div>
+            <div id="livecontrols-desktop" class="mx-auto">
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-3">
+                        <div class="stream-card" onclick="displayLiveISS()">
+                            <div class="linkimg">
+                                <img class="image" src="../resources/iss-live.jpg" alt="live from ISS"> 
+                                <div class="hover">
+                                    <div class="hovertext">Watch live footage from the ISS</div>
+                                </div>
+                                <div class="linktext">
+                                    <p>Live from the ISS</p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-3">
+                        <div class="stream-card" onclick="displayNews()">
+                            <div class="linkimg">
+                                <img class="image" src="../resources/news-live.jpg" alt="live news"> 
+                                <div class="hover">
+                                    <div class="hovertext">Live news and replays</div>
+                                </div>
+                                <div class="linktext">
+                                    <p>Live news and replays</p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-3">
+                        <div class="stream-card" onclick="displayNasaTV()">
+                            <div class="linkimg">
+                                <img class="image" src="../resources/nasa-live.jpg" alt="NASA live"> 
+                                <div class="hover">
+                                    <div class="hovertext">Nasa live TV</div>
+                                </div>
+                                <div class="linktext">
+                                    <p>Nasa TV</p>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile -->
+            <div id="livecontrols-mobile">
+                    <div id="ISSmobile" class="col-12">
+                        <input type="button" onclick="displayLiveISS()" value="Watch live footage from the ISS">
+                    </div>
+                    <div id="NewsMobile" class="col-12">
+                        <input type="button" onclick="displayNews()" value="Watch News and Launches Live">
+                    </div>
+                    <div id="NASAmobile" class="col-12">
+                        <input type="button" onclick="displayNasaTV()" value="Watch NASA TV Live">
+                    </div>
+                </div>
+
+
+            <script src="../scripts/livestream.js"></script>
         </div>
     </div>
     <!-- Footer -->
@@ -86,8 +158,8 @@
                         <ul class="pages">
                             <li><a href="../index,html">Home</a></li>
                             <li><a href="#">Launch Schedule</a></li>
-                            <li><a href="#">Live Feed</a></li>
-                            <li><a href="#">Live Stream</a></li>
+                            <li><a href="livefeed.html">Live Feed</a></li>
+                            <li><a href="livestream.html">Live Stream</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>

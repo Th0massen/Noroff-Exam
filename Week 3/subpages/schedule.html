@@ -17,6 +17,8 @@
     <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px)" href="../css/desktop.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <!-- Schedule-->
+    <link rel="stylesheet" type="text/css" href="../css/calendar.css">
 </head>
 <body>
     <video id="backgroundvideo" preload muted autoplay loop>
@@ -43,7 +45,7 @@
                         <a class="nav-link" href="livestream.html">Livestream</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav mx-auto">
@@ -58,20 +60,16 @@
         <p>In collaboration with <img id="spacexlogo" src="../resources/spacexlogo.png" alt="spacex logo"></p>
     </div>
 
+    <div id="scheduleHeader" class="col-12">
+        <h2>Upcoming rocket launches</h2>
+    </div>
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
-
-    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
-    
-    <div id="map" style="width: 800px; height: 400px"> </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
-    
-
-    
-
-
-
-
+    <div id="desktopschedule" class="container">
+        <!-- This was supposed to be a calendar displaying all the upcoming events, but i couldnt get it to work and i ran out of time, sooooo... -->
+        <div id="schedulecontainer" class="row">
+        </div>
+        <script src="../scripts/schedule.js"></script>
+    </div>
     <!-- Footer -->
     <footer class="footer-bs">
             <div class="row">
@@ -89,7 +87,7 @@
                             <li><a href="#">Launch Schedule</a></li>
                             <li><a href="livefeed.html">Live Feed</a></li>
                             <li><a href="livestream.html">Live Stream</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>

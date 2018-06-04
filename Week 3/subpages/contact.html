@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="nav navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Schedule</a>
+                        <a class="nav-link" href="schedule.html">Schedule</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="livefeed.html">Livefeed</a>
@@ -90,23 +90,27 @@
                 <form action="/action_page.php">
                     <div class="form-group">
                         <label for="name">Name:</label>
-                        <input type="name" class="form-control" id="name">
+                        <input type="name" class="form-control" id="name" required>
                     </div>
                     <div class="form-group">
                       <label for="email">Email address:</label>
-                      <input type="email" class="form-control" id="email">
+                      <input type="email" class="form-control" id="email" required>
                     </div>
                     <div class="form-group">
                         <label for="comment">Feedback:</label>
-                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                        <textarea class="form-control" rows="5" id="comment" required> </textarea>
                     </div> 
+                    <div id="show" style="display: none; text-align: center; color: green;">
+                        <p>Thank you for the feedback, we will review it soon.<br>You will hear from our support team in a few days</p>
+                    </div>
                 </form> 
             </div>
             
             <!-- Modal footer -->
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" onclick="">Submit</button>
+                <button type="button" class="btn btn-secondary" onclick="validate()">Submit</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <script src="../scripts/contactValidation.js"></script>
             </div>
             
           </div>
@@ -126,7 +130,7 @@
                     <div class="col-md-6">
                         <ul class="pages">
                             <li><a href="../index.html">Home</a></li>
-                            <li><a href="#">Launch Schedule</a></li>
+                            <li><a href="schedule.html">Launch Schedule</a></li>
                             <li><a href="livefeed.html">Live Feed</a></li>
                             <li><a href="livestream.html">Live Stream</a></li>
                             <li><a href="#">Contact</a></li>

@@ -49,8 +49,50 @@ body{
   box-shadow: 0 8px 16px 0 rgba(0,0.4,0.4,0.8);
 }
 
+.stream-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0.2,0.2,0.4);
+  transition: 0.3s;
+  width: 80%;
+  background-color: #ffffff;
+}
+
+.stream-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0.4,0.4,0.8);
+}
+
+.stream-card, .stream-card .hovertext{
+  color: black;
+}
+
 .container {
   padding: 2px 16px;
+}
+
+#scheduleHeader{
+  text-align: center;
+  margin: 25px 45px;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* livestreams show and hide */
+#streamHeader{
+  text-align: center;
+  color: white;
+  margin: 20px 65px;
+}
+
+#live-iss{
+  display: none;
+}
+
+#nasa-tv{
+  display: none;
+}
+
+#livecontrols-desktop{
+  margin-top: 35px;
+  padding-top: 20px;
 }
 
 /* Frontpage Hyperlinks */
@@ -153,6 +195,29 @@ body{
 
 #ISSinfo{
   font-size: 12px;
+}
+
+#rocketinformation{
+  margin-top: 55px;
+}
+
+#dataHead{
+  text-align: center;
+  font-size: 25px;
+  margin-top: 55px;
+  padding: 10px;
+}
+
+#rocketinformation .col-md-6:hover{
+  background-color: black;
+}
+
+#rocketinformation h2{
+  margin-top: 35px;
+}
+
+#rocketinformation p{
+  padding: 5px;
 }
 
 /* Footer */

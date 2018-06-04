@@ -77,15 +77,24 @@
     <div id="peopleinspace" class="col-12">
         <script src="../scripts/astronauts.js"></script>
         <div id="numberinspace">
-            <p><!-- Astronauts currently in Space -->There are currently <span id='spacepeeps' style='font-weight:bold;'>?</span> humans in space.</p>
+            <p><!-- Astronauts currently in Space -->There are currently <span id='spacepeople' style='font-weight:bold;'>?</span> humans in space.</p>
             <script>
             $.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
                 var number = data['number'];
-                $('#spacepeeps').html(number);
+                $('#spacepeople').html(number);
                 });
             </script>
         </div>
     </div>
+    </div>
+
+    <div class="container">
+        <div id="rocketinformation">
+            <p id="dataHead">SpaceX Rockets data and information</p>
+            <script src="../scripts/rocketdata.js"></script>
+            <div id="rocketcontainer" class="col-12">
+            </div>
+        </div>
     </div>
 
 
