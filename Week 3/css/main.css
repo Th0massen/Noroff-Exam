@@ -112,6 +112,12 @@ body{
   color: black;
 }
 
+#scheduleHeader{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 /* contact */
 #header{
   text-align: center;
@@ -163,6 +169,25 @@ body{
 
 #showNews{
   display: none;
+}
+
+/* schedule */
+#desktopschedule{
+  margin-top: 35px;
+}
+
+#desktopschedule .col-7{
+  margin: 40px 35px;
+}
+
+#desktopschedule .col-12{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#desktopschedule .col-7 .col-12 h5{
+  font-size: 25px;
+  font-weight: bold;
 }
 
 /* livefeed */
