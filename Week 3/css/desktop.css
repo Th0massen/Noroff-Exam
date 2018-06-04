@@ -2,6 +2,10 @@
     width: 15%;
     height: auto;
   }
+  #spacexlogoFooter{
+    width: 50%;
+    height: auto;
+  }
 
   .jumbotron h1{
     font-family: 'Orbitron', sans-serif;
